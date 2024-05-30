@@ -2,6 +2,7 @@
   "name": "osnedvezi",
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
+  "homepage": "https://jakubmuzzik.github.io/OSNedvezi",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
