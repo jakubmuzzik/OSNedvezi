@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/OSNedvezi/static/js/main.5341e8fe.js",
+    "main.js": "/OSNedvezi/static/js/main.17cb68f8.js",
     "static/js/702.c52b35e9.js": "/OSNedvezi/static/js/702.c52b35e9.js",
     "static/media/plan.png": "/OSNedvezi/static/media/plan.9bea613d01ebe4e30ac8.png",
     "static/media/building1.png": "/OSNedvezi/static/media/building1.79ffcb873c74f2264eab.png",
@@ -16,11 +16,11 @@
     "favicon-16.png": "/OSNedvezi/favicon-16.png",
     "manifest.json": "/OSNedvezi/manifest.json",
     "serve.json": "/OSNedvezi/serve.json",
-    "main.5341e8fe.js.map": "/OSNedvezi/static/js/main.5341e8fe.js.map",
+    "main.17cb68f8.js.map": "/OSNedvezi/static/js/main.17cb68f8.js.map",
     "702.c52b35e9.js.map": "/OSNedvezi/static/js/702.c52b35e9.js.map"
   },
   "entrypoints": [
     "static/js/702.c52b35e9.js",
-    "static/js/main.5341e8fe.js"
+    "static/js/main.17cb68f8.js"
   ]
 }
