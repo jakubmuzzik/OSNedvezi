@@ -13,12 +13,23 @@ export default function App() {
         style={{ position: 'absolute', top, right, width, aspectRatio, cursor: 'pointer', flexDirection: 'column' }}
       >
         <MotiView
-          style={{ aspectRatio }}
+          style={{ 
+            aspectRatio,
+            shadowColor: "#FFF",
+            shadowOffset: {
+              width: 0,
+              height: 9,
+            },
+            shadowOpacity: 0.48,
+            shadowRadius: 11.95,
+
+            elevation: 18,
+          }}
           onMouseEnter={() => setHoveredBuilding(index)}
           onMouseLeave={() => setHoveredBuilding()}
           animate={{
-            opacity: hoveredBuilding === index ? 1 : 1,
-            transform: [{ scale: hoveredBuilding === index ? 1.15 : 1 }],
+            opacity: hoveredBuilding === index ? 1 : 0,
+            transform: [{ scale: hoveredBuilding === index ? 1.1 : 1 }],
           }}
           transition={{
             type: 'timing',
@@ -33,7 +44,22 @@ export default function App() {
 
         <AnimatePresence>
           {hoveredBuilding === index && <MotiView
-            style={{ width: 'max-content', padding: 15, borderRadius: 10, backgroundColor: 'rgba(0, 0, 0, .7)', borderRadius: 10, }}
+            style={{ 
+              width: 'max-content', 
+              padding: 15,
+              borderRadius: 10,
+              backgroundColor: 'rgba(0, 0, 0, .7)',
+              borderRadius: 10,
+              shadowColor: "rgba(0, 0, 0, .7)",
+              shadowOffset: {
+                width: 0,
+                height: 6,
+              },
+              shadowOpacity: 0.37,
+              shadowRadius: 7.49,
+
+              elevation: 12,
+            }}
             from={{
               opacity: 0,
               transform: [{ translateY: 100 }],
@@ -104,17 +130,17 @@ export default function App() {
               style={{ aspectRatio: 2560 / 1440 }}
             />
 
-            {renderHoverableBuilding('29.2%', '74.9%', 1, require('./assets/building1.png'), 202/110.5, '7.890625%')}
+            {renderHoverableBuilding('30.2%', '71.9%', 1, require('./assets/building1.png'), 202/110.5, '7.890625%')}
 
-            {renderHoverableBuilding('31.2%', '64.9%', 2, require('./assets/building2.png'), 172.5/112.5, '6.73828125%')}
+            {renderHoverableBuilding('32.6%', '63.5%', 2, require('./assets/building2.png'), 172.5/112.5, '6.73828125%')}
 
-            {renderHoverableBuilding('31%', '54.6%', 3, require('./assets/building3.png'), 158.5/110, '6.19140625%')}
+            {renderHoverableBuilding('32.2%', '54%', 3, require('./assets/building3.png'), 158.5/110, '6.19140625%')}
 
-            {renderHoverableBuilding('29%', '44.6%', 4, require('./assets/building4.png'), 154.5/108.5, '6.03515625%')}
+            {renderHoverableBuilding('30.5%', '44.6%', 4, require('./assets/building4.png'), 154.5/108.5, '6.03515625%')}
 
-            {renderHoverableBuilding('28%', '35.2%', 5, require('./assets/building5.png'), 178.5/106, '6.97265625%')}
+            {renderHoverableBuilding('29.5%', '35.2%', 5, require('./assets/building5.png'), 178.5/106, '6.97265625%')}
 
-            {renderHoverableBuilding('27%', '25.2%', 6, require('./assets/building6.png'), 191/105, '7.4609375%')}
+            {renderHoverableBuilding('29%', '26.2%', 6, require('./assets/building6.png'), 191/105, '7.4609375%')}
           </View>
         </View>
       </BlurView>
